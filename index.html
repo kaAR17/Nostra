@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Offerbar-->
+    <div class=" bg-black flex " id="promo">
+        <p style="color:white;margin-left: 40%;">Sign Up and <b>GET 20% OFF</b> for your first Order </p>
+        <p style="color:white;margin-left: 5%; cursor: pointer;" id="closebutton">x</p>
+
+    </div>
+
+    <!--Responsive Navbar-->
+
+    <nav class=" nav-bar p-3 flex items-center justify-between shadow-xl sticky top-0 z-10  fill-transparent">
+        <h1 class="text-4xl font-bold">Nostra</h1>
+
+        <!-- Menu icon for mobile view -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5 " />
+        </svg>
+
+        <!-- Navigation links -->
+        <ul class="nav-links gap-5  text-gray-600 md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black cursor-pointer" href="#newarrival">New arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black cursor-pointer" href="#most-wanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contactus</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="sidenav" class="bg-black fixed text-white top-0 transition-all duration-1000"
+        style="width:50%;height:100vh ;left:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class=" flex-col gap-10 items-center text-gray-600  md:flex">
+            <li>
+                <a class="hover:underline hover:text-yellow-400" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-yellow-400 cursor-pointer" href="#newarrival">New arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-yellow-400 cursor-pointer" href="#most-wanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-yellow-400" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-yellow-400" href="contact.html">Contactus</a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- slider section-->
+    <div class="section">
+        
+        <div class="slide-container">
+            <div class="slides">
+                <img src="./images/slide.jpg">
+                <img src="./images/slide.jpg">
+                <img src="./images/slide.jpg">
+            </div>
+            <div class="left" id="leftButton">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="right" id="rightButton">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="page">
+                <h1>Level up your style with our</h1>
+                <p>Summer Collections</p>
+                <button  type="submit">Shop Now <i class="fa-solid fa-arrow-right "></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="mr-5 ml-5">
+        <h2 class="font-extrabold text-3xl">Brands</h2>
+        <div class="flex flex-wrap p-5 justify-between gap-10 text-center">
+            <div class="text-center">
+                <img src="./images/behance.png" class="w-10" style="align-items:center;">
+                <p class="text-3xl p-2" style="text-align: center;">Puma</p>
+            </div>
+            <div class="text-center"><img src="./images/leaves.png" class="w-10">
+                <p class="text-3xl p-2">Leaves</p>
+            </div>
+            <div class="text-center"> <img src="./images/adidas.png" class="w-10">
+                <p class=" text-3xl p-2">Adidas</p>
+            </div>
+            <div class="text-center"><img src="./images/simple.png" class="w-10">
+                <p class="text-3xl p-2">Simple</p>
+            </div>
+            <div class="text-center"> <img src="./images/twitch.png" class="w-10">
+                <p class="text-3xl p-2">Twitch</p>
+            </div>
+            <div class="text-center"> <img src="./images/behance (1).png" class="w-10">
+                <p class="text-3xl p-2">Behance</p>
+            </div>
+            <div class="text-center"><img src="./images/leaves (1).png" class="w-10">
+                <p class="text-3xl p-2">Ajio</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="experiences">
+        <h1>We Provide Best<br>
+            Customer Experiences</h1>
+        <p style="font-weight:400;font-size:x-large;">|| We ensure that our customer have the best shopping
+            experience</p>
+    </div>
+    <div class="container">
+        <div class="p-5 bg-yellow-100 rounded-md">
+            <i style="font-size:3vw;margin-bottom:10px;" class="fa-regular fa-circle-check"></i>
+            <h1 class="font-extrabold">Original Products</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="p-5 bg-yellow-100 rounded-md">
+            <i style="font-size:3vw;margin-bottom:10px" class="fa-regular fa-face-smile"></i>
+            <h1 class="font-extrabold">SatisficationGuarentee</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        </div>
+        <div class="p-5 bg-yellow-100 rounded-md">
+            <i style="font-size:3vw;margin-bottom:10px" class="fa-solid fa-broom"></i>
+            <h1 class="font-extrabold">NewArrivalEveryday</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        </div>
+        <div class="p-5 bg-yellow-100 rounded-md">
+            <i style="font-size:3vw;margin-bottom:10px" class="fa-solid fa-truck-fast"></i>
+            <h1 class="font-extrabold">Fast and Shipping</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        </div>
+
+    </div>
+    <div class="new" id="newarrival">
+        <h1 class="font-extrabold text-3xl m-5">New Arrivals</h1>
+
+        <div class="newarrival">
+            <div class="item">
+
+                <img style="width:250px;height:300px;" src="./images/n1.jpg">
+                <div class="overlay"></div>
+                <button> Shop
+                    Now <i class="fa-solid fa-arrow-right "></i>
+
+                </button>
+            </div>
+            <div class="item">
+
+                <img style="width:250px;height:300px;" src="./images/n2.jpg">
+                <div class="overlay"></div>
+                <button> Shop
+                    Now <i class="fa-solid fa-arrow-right "></i>
+                </button>
+
+            </div>
+            <div class="item">
+
+                <img style="width:250px;height:300px;" src="./images/n3.jpg ">
+                <div class="overlay"></div>
+                <button> Shop
+                    Now <i class="fa-solid fa-arrow-right "></i>
+                </button>
+
+            </div>
+            <div class="item">
+
+                <img style="width:250px;height:300px;" src="./images/n4.jpg">
+                <div class="overlay"></div>
+                <button> Shop
+                    Now <i class="fa-solid fa-arrow-right "></i>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="image-scroll-container" id="most-wanted">
+        <h1 class="font-extrabold text-3xl m-5">Most Wanted</h1>
+        <div class="image-scroll">
+            <div class="most-wanted">
+                <img src="./images/w1.jpg" alt="Image 1">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/w2.jpg" alt="Image 2">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/w3.jpg" alt="Image 3">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/w4.jpg" alt="Image 4">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/n1.jpg" alt="Image 5">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/n2.jpg" alt="Image 6">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/n3.jpg" alt="Image 7">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+            <div class="most-wanted">
+                <img src="./images/n4.jpg" alt="Image 8">
+                <p class="sale">Sale</p>
+                <img style="width: 50px;" class="heart" src="./images/heart.png" alt="Heart Icon">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="limited-offer">
+        <img src="./images/cus.jpg">
+        <div class="offer">
+            <h1 class="font-extrabold p-2" style="font-size: 5vw;">Limited Offer</h1>
+            <h2 class="font-extrabold p-2 " style="font-size:2vw;">35% OFF on this for the first 30 Customers</h2>
+            <h1 class="font-extrabold  bg-white rounded text-center"
+                style="font-size:2vw; border-width: 5px;width:35%;">Shop Now <i class="fa-solid fa-arrow-right "></i>
+            </h1>
+        </div>
+
+    </div>
+    <div class="news">
+        <h1>Join our News Letter</h1>
+        <h3> Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+        <input type="text" placeholder="Signup"><br>
+
+
+        <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-Nostra">
+            <h2 class="font-extrabold p-2" style="font-size: 5vw;color: #ffffff;">Nostra</h2>
+            <p class=" p-2 " style="font-size:2vw;color: #ffffff;">The Standard chunk of Lorem ipsum
+                used since the 1500s is reprodused
+                below for those interest</p>
+            <div class="footer-icon">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+                <i class="icon fa-brands fa-twitter" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+                <i class="icon fa-brands fa-facebook" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+            </div>
+            <p class=" p-2 " style="font-size:2vw;color: #ffffff;">@ 2023 Nostra.com</p>
+        </div>
+
+
+
+
+
+        <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,657 @@
+.body{
+  font-family: Arial, sans-serif;
+  
+  box-sizing: border-box;
+  padding:0;
+  
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+.nav-bar{
+  z-index:10;
+
+}
+
+.nav-links {
+  display: flex; 
+}
+
+#menuicon {
+  display: none; 
+}
+#sidenav{
+  z-index: 20;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+@media screen and (max-width: 768px) {
+  
+  .nav-links {
+      display: none;
+  }
+  
+
+  #menuicon {
+      display: block;
+  }
+  #sidenav{
+    z-index: 20;
+    display: block;
+  
+  }
+}
+
+
+.section {
+  
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.slide-container {
+  width: 1250px;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.slides img {
+  width: 1250px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.left {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-size: 10rem;
+  font-weight: bolder;
+  color: antiquewhite;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 10rem;
+  font-weight: bolder;
+  color: antiquewhite;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.page {
+  position: absolute;
+  top: 15%;
+  left:35%;
+  text-align: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: bolder;
+  color: antiquewhite;
+  z-index: 1;
+
+}
+.page button{
+  font-weight: bolder;
+  font-size: large;
+  padding:10px;
+  border-radius: 5px;
+  color: black;
+  background-color: antiquewhite;
+}
+
+
+.experiences{
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+    gap:10px;
+    align-items: center;
+}
+.newarrival {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   margin: 10px;
+  }
+  
+  .item {
+    position: relative;
+    width: 250px;
+    height: 300px; 
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0.6;
+    z-index: 2;
+    border-radius:3%;
+  }
+  
+  
+  
+   .item button {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    z-index: 2; 
+    border-radius: 5%;
+    width: 70%;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .image-scroll-container {
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.image-scroll {
+    display: flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    gap: 10px;
+    padding: 10px; 
+}
+.image-scroll::-webkit-scrollbar{
+    appearance: none;
+}
+
+.most-wanted {
+    flex: 0 0 auto; 
+    position: relative;
+}
+
+.most-wanted img {
+    width: 100%;
+    height: auto; 
+    max-width: 300px; 
+    border-radius: 8px; 
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.heart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+  
+ 
+  .limited-offer{
+    width: 100%;
+    height:100%;
+    background-color: rgb(7, 2, 27,0.5);
+    display: flex;
+   
+
+  }
+  .limited-offer img{
+    width:50%;
+    height:400px;
+    padding: 30px;
+    margin: 10px;
+    
+  }
+  .news{
+    margin:5px;
+    text-align: center;
+
+  }
+  .news h1{
+    margin: 10px;
+    font-size: 4vw;
+    font-weight: bolder;
+   }
+  .news h3{
+    font-size:2vw;
+
+  }
+  .news input{
+    padding: 10px;
+    width: 70%;
+    border:solid black 1px;
+  }
+  .news button{
+   margin: 10px;
+   padding: 10px;
+    background-color: rgb(6, 23, 41);
+    border-radius: 5px;
+    color: white;
+  }
+  .footer
+  {
+    background-color: rgb(8, 3, 20);
+  }
+  .footer-Nostra
+  {
+    margin: 20px;
+    padding:20px;
+  }
+  .footer-icon
+  {
+    margin: 20px;
+    padding:20px;
+  }
+ /* Container for the flex layout */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Styling for the box containing the checkboxes */
+.box {
+  width: 20%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.dress {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+
+h1 {
+  font-size: 2vw;
+}
+
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+.ver-line {
+  width: 2px;
+  background-color: black;
+  margin: 0 5px;
+}
+
+
+
+
+input[type="text"] {
+  padding:5px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  align-items: center;
+}
+
+
+
+
+.col-images {
+  width: 80%;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  
+  padding: 10px;
+}
+
+
+.shirt {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  width: 220px;            
+  margin: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+/* Styling for the image */
+.shirt img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Styling for the product name and price */
+.shirt p {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover effect on product cards */
+.shirt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design: Stack images on smaller screens */
+@media (max-width: 768px) {
+  .col-images {
+    justify-content: center; 
+  }
+
+  .shirt {
+    width: 100%; 
+    max-width: 300px; 
+  }
+
+  input[type="text"] {
+    width: 90%; 
+  }
+}
+.contact{
+  margin-right: 15%;
+}
+
+
+
+
+/* For Mobile Devices (width <= 768px) */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  
+
+  
+  .nav-links li {
+     display:none;
+  }
+
+  #menuicon {
+      display: block;
+      
+  }
+
+  #sidenav {
+      left: -100%;
+  }
+
+  #sidenav.active {
+      left: 0;
+  }
+
+  /* Slider */
+  .slide-container {
+      width: 100%;
+      height: 300px;
+  }
+
+  .slides img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Promo bar */
+  #promo {
+      font-size: 14px;
+      text-align: center;
+      padding: 5px 0;
+  }
+
+  /* Image sizes */
+  .newarrival .item img, .image-scroll .most-wanted img {
+      width: 100%;
+      height: auto;
+  }
+
+  .newarrival, .image-scroll {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+  }
+
+  .newarrival .item, .image-scroll .most-wanted {
+      position: relative;
+      width: 100%;
+  }
+
+  .page h1 {
+      font-size: 20px;
+  }
+
+  .page p {
+      font-size: 15px;
+  }
+
+  /* Footer */
+  .footer-Nostra {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .footer-icon {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .footer-icon i {
+      font-size: 2rem;
+  }
+
+  /* For the News Section */
+  .news h1, .news h3 {
+      text-align: center;
+      font-size: 20px;
+  }
+
+  .news input {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+  }
+
+  .news button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+  }
+
+  /* Most wanted items */
+  .most-wanted img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Limited offer */
+  .limited-offer h1, .limited-offer h2 {
+      font-size: 20px;
+  }
+
+  .limited-offer h1 {
+      font-size: 3rem;
+  }
+
+  .limited-offer h2 {
+      font-size: 2rem;
+  }
+}
+
+/* For Tablet Devices (width <= 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Adjust navbar and links for medium screens */
+  .nav-bar {
+      padding: 15px;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 15px;
+  }
+
+  #menuicon {
+      display: block;
+  }
+
+  .slide-container {
+      width: 100%;
+      height: 350px;
+  }
+
+  .slides img {
+      width: 100%;
+      height: 350px;
+  }
+
+  .newarrival, .image-scroll {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+  .newarrival .item, .image-scroll .most-wanted {
+      position: relative;
+      width: 100%;
+  }
+
+  .footer-icon {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .footer-icon i {
+      font-size: 2.5rem;
+  }
+}
+
+/* For Large Screens (width > 1024px) */
+@media screen and (min-width: 1025px) {
+  /* Adjust navbar and slider for larger screens */
+  .nav-bar {
+      padding: 20px;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 20px;
+  }
+
+  /* Slider */
+  .slide-container {
+      width: 100%;
+      height: 450px;
+  }
+
+  .slides img {
+      width: 100%;
+      height: 450px;
+  }
+
+  /* Grid layout for new arrivals */
+  .newarrival, .image-scroll {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+  }
+
+  .footer-icon {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+  }
+
+  .footer-icon i {
+      font-size: 3rem;
+  }
+
+  .news input {
+      width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

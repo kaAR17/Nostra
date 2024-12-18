@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class=" p-3 flex items-center justify-between shadow-xl sticky top-0 z-50">
+        <h1 class="text-4xl font-bold">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+            stroke="currentColor" class="h-6 w-6 md:hidden cursor-pointer">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5 " />
+        </svg>
+        <ul class="nav-links gap-5 text-gray-600 md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black cursor-pointer" href="#new">New arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black cursor-pointer" href="">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contactus</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh ;left:-50%;" > 
+        <div class="text-right p-5" >
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div> 
+        <ul class=" flex-col gap-20 items-center text-white md:flex" >
+            <li>
+                <a class="hover:underline hover:text-yellow-400" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-yellow-400 cursor-pointer" href="#newarrival">New arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-yellow-400 cursor-pointer" href="#most-wanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contactus</a>
+            </li>
+      
+    </ul>
+</section>
+    <div class="flex">
+        <div class="box">
+            <h1 class="dress" style="font-size: 2vw;"> Occasion</h1>
+            <input type="checkbox" name="check" value="summer"> Summer<br>
+            <input type="checkbox" name="check" value="beach"> Beach <br>
+            <input type="checkbox" name="check" value="party"> Party <br>
+    
+            <h1 class="dress" style="font-size: 2vw;"> Colors </h1>
+            <input type="checkbox" name="check" value="red"> Red<br>
+            <input type="checkbox" name="check" value="blue"> Blue<br>
+            <input type="checkbox" name="check" value="white"> White<br>
+            <input type="checkbox" name="check" value="green"> Green<br>
+    
+            <h1 class="dress" style="font-size: 2vw;"> Arrivals</h1>
+            <input type="checkbox" name="check" value="new"> New<br>
+            <input type="checkbox" name="check" value="old"> Old<br>
+        </div>
+    
+        <div class="ver-line"></div>
+    
+        <div class="col-images" id="products">
+            <input type="text" placeholder="Search" id="search">
+    
+            <!-- Product 1 -->
+            <div class="shirt" data-occasion="summer" data-color="red" data-arrival="new">
+                <img src="./images/w1.jpg" alt="Floral Summer Shirt">
+                <p>Floral Summer Shirt<br>₹220</p>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="shirt" data-occasion="summer" data-color="blue" data-arrival="new">
+                <img src="./images/w2.jpg" alt="Summer Green">
+                <p>Summer Green<br>₹260</p>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="shirt" data-occasion="party" data-color="blue" data-arrival="old">
+                <img src="./images/w3.jpg" alt="Party Floral Shirt">
+                <p>Party Floral Shirt<br>₹399</p>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="shirt" data-occasion="summer" data-color="red" data-arrival="old">
+                <img src="./images/w4.jpg" alt="Floral Summer Shirt">
+                <p>Floral Summer Shirt<br>₹399</p>
+            </div>
+    
+            <!-- Product 5 -->
+            <div class="shirt" data-occasion="beach" data-color="blue" data-arrival="new">
+                <img src="./images/n1.jpg" alt="Beach Shirt">
+                <p>Beach Shirt<br>₹579</p>
+            </div>
+    
+            <!-- Product 6 -->
+            <div class="shirt" data-occasion="party" data-color="white" data-arrival="old">
+                <img src="./images/n2.jpg" alt="Shirt Party Red">
+                <p>Shirt Party Red<br>₹579</p>
+            </div>
+    
+            <!-- Product 7 -->
+            <div class="shirt" data-occasion="party" data-color="blue" data-arrival="new">
+                <img src="./images/n3.jpg" alt="Shirt Party Red">
+                <p>Shirt Party Red<br>₹579</p>
+            </div>
+    
+            <!-- Product 8 -->
+            <div class="shirt" data-occasion="party" data-color="white" data-arrival="old">
+                <img src="./images/n4.jpg" alt="Party Floral Shirt">
+                <p>Party Floral Shirt<br>₹399</p>
+            </div>
+    
+            <!-- Product 9 -->
+            <div class="shirt" data-occasion="summer" data-color="green" data-arrival="new">
+                <img src="./images/w4.jpg" alt="Floral Summer Shirt">
+                <p>Floral Summer Shirt<br>₹399</p>
+            </div>
+        </div>
+    </div>
+    <div class="limited-offer">
+        <img src="./images/cus.jpg">
+        <div class="offer">
+            <h1 class="font-extrabold p-2" style="font-size: 5vw;">Limited Offer</h1>
+            <h2 class="font-extrabold p-2 " style="font-size:2vw;">35% OFF on this for the first 30 Customers</h2>
+            <h1 class="font-extrabold  bg-white rounded text-center"
+                style="font-size:2vw; border-width: 5px;width:35%;">Shop Now <i class="fa-solid fa-arrow-right "></i>
+            </h1>
+        </div>
+
+    </div>
+    <div class="news">
+        <h1>Join our News Letter</h1>
+        <h3> Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+        <input type="text" placeholder="Signup"><br>
+
+
+        <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-Nostra">
+            <h2 class="font-extrabold p-2" style="font-size: 5vw;color: #ffffff;">Nostra</h2>
+            <p class=" p-2 " style="font-size:2vw;color: #ffffff;">The Standard chunk of Lorem ipsum
+                used since the 1500s is reprodused
+                below for those interest</p>
+            <div class="footer-icon">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+                <i class="icon fa-brands fa-twitter" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+                <i class="icon fa-brands fa-facebook" style="color: #ffffff;width:10%;font-size:3vw;"></i>
+            </div>
+            <p class=" p-2 " style="font-size:2vw;color: #ffffff;">@ 2023 Nostra.com</p>
+        </div>
+    </div>
+    <script src="collection.js"></script>
+
+
+</body>
+
+</html>
